@@ -3,8 +3,235 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Intuji intern</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main/utility-panel.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css//left-sidebar/left-sidebar.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main/main-grid.css" />
+    <link rel="stylesheet" href="./css/overlay.css" />
+    <link rel="stylesheet" href="./css/main/recent-transaction.css" />
+    <link rel="stylesheet" href="./css/main//saving-plan.css" />
+    <link rel="stylesheet" href="./css/main/overview.css" />
+    <link rel="stylesheet" href="./css/main/form.css" />
+    <link rel="stylesheet" href="./css/main/user-panel.css" />
+    <link rel="stylesheet" href="./css/main/analytics.css" />
+    <link rel="stylesheet" href="./css/left-sidebar/left-sidebar.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="utility-panel radius-xxlg bg-white">
+      <div class="left-drawer cursor-pointer" id="left-drawer">
+        <span class="material-symbols-outlined"> menu </span>
+      </div>
+      <div
+        class="right-drawer cursor-pointer"
+        id="right-drawer"
+        style="display: none"
+      >
+        <span class="material-symbols-outlined"> menu </span>
+      </div>
+    </div>
+    <div class="container" id="container">
+      <div class="left-sidebar bg-white" id="left-sidebar"></div>
+      <!-- <div class="laptop-left-sidebar bg-white" id="laptop-left-sidebar"></div> -->
+      <div class="overlay" id="overlay"></div>
+
+      <main class="main">
+        <div class="main-grid">
+          <form class="main-search radius-xxlg">
+            <span class="material-symbols-outlined"> search </span>
+            <input
+              type="text"
+              placeholder="Search anywhere.."
+              autocomplete="no"
+              class="font-medium light-border"
+            />
+          </form>
+          <div class="bg-white user-panel radius-xxlg">
+            <div class="light-border user-panel-img radius-xxlg padding-img">
+              <span class="material-symbols-outlined img-sm">
+                notifications
+              </span>
+            </div>
+            <div class="light-border user-panel-img radius-xxlg padding-img">
+              <span class="material-symbols-outlined img-sm"> tooltip </span>
+            </div>
+            <div
+              class="radius-full padding-img light-border img-sm-parent bg-img"
+            >
+              <img src="./assets/gallery.png" class="img-sm" alt="real" />
+            </div>
+            <p>Bibek Koirala</p>
+            <div>
+              <span class="material-symbols-outlined">
+                keyboard_arrow_down
+              </span>
+            </div>
+          </div>
+          <div class="overview padding-sm bg-white radius-lg">
+            <div class="main-component-common-header">
+              <h2 class="text-primary text-base">Overview</h2>
+              <p class="text-blue text-sm"></p>
+            </div>
+            <div class="overview-items" id="overview-items"></div>
+          </div>
+          <div class="saving-plan bg-white padding-sm bg-white radius-lg">
+            <div class="main-component-common-header">
+              <h2 class="text-primary text-base">Saving Plans</h2>
+              <p class="text-blue text-sm">See All</p>
+            </div>
+            <hr style="margin-block: 0.7rem" />
+            <div class="saving-plan-items" id="saving-plan-items"></div>
+          </div>
+
+          <div class="analytics fit-content bg-white padding-sm radius-lg">
+            <div class="main-component-common-header">
+              <h2 class="text-primary text-base">Analytics</h2>
+              <div class="analytics-header-right">
+                <div class="analytics-label-one">
+                  <p
+                    class="dot bg-yellow radius-full cursor-pointer"
+                    title="Label 1"
+                  ></p>
+                  <h2 class="text-primary" title="Label 1">Label 1</h2>
+                </div>
+                <div class="analytics-label-two">
+                  <p
+                    class="dot bg-blue radius-full cursor-pointer"
+                    title="Label 2"
+                  ></p>
+                  <h2 class="text-primary">Label 2</h2>
+                </div>
+                <div class="light-border radius-lg analytics-frequency">
+                  <p>weekly</p>
+                  <span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="analytics-chart" id="analytics-chart">
+              <canvas id="my-chart" class="my-chart"></canvas>
+            </div>
+          </div>
+          <div
+            class="recent-transaction fit-content bg-white padding-sm radius-lg"
+          >
+            <div class="main-component-common-header">
+              <h2 class="text-primary font-bold text-base">
+                Recent Transaction
+              </h2>
+              <p class="text-blue text-sm">See All</p>
+            </div>
+            <hr style="margin-block: 0.7rem" class="text-primary" />
+            <div
+              class="recent-transaction-items"
+              id="recent-transaction-items"
+            ></div>
+          </div>
+        </div>
+      </main>
+
+      <!-- <div class="right-sidebar" id="right-sidebar">real</div> -->
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const ctx = document.getElementById("my-chart").getContext("2d");
+
+      const weeklyData = {
+        labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+        datasets: [
+          {
+            label: "Purple Line",
+            data: [13000, 10000, 5000, 16000, 15000, 13000, 21000, 9000, 18000],
+            borderColor: "rgba(114, 96, 234, 1)",
+            backgroundColor: "rgba(114, 96, 234, 0.1)",
+            tension: 0.4,
+            fill: true,
+            pointRadius: 0,
+          },
+          {
+            label: "Yellow Line",
+            data: [5000, 7000, 9500, 5200, 4800, 10200, 4500, 7000, 9500],
+            borderColor: "rgba(255, 177, 0, 1)",
+            backgroundColor: "rgba(255, 177, 0, 0.1)",
+            tension: 0.4,
+            fill: true,
+            pointRadius: 0,
+          },
+        ],
+      };
+
+      const myChart = new Chart(ctx, {
+        type: "line",
+        data: weeklyData,
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false,
+            },
+            tooltip: {
+              mode: "index",
+              intersect: false,
+            },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              border: {
+                display: false,
+              },
+              grid: {
+                drawBorder: false,
+                color: "rgba(200, 200, 200, 0.15)",
+              },
+              ticks: {
+                callback: function (value) {
+                  if (value === 0) return "0k";
+                  return value / 1000 + "k";
+                },
+                stepSize: 5000,
+                color: "#999",
+              },
+            },
+            x: {
+              grid: {
+                display: false,
+              },
+              ticks: {
+                color: "#999",
+              },
+            },
+          },
+          interaction: {
+            intersect: false,
+            mode: "nearest",
+          },
+          elements: {
+            line: {
+              borderWidth: 2,
+            },
+          },
+        },
+      });
+    });
+  </script>
+  <script type="module" src="./js/script.js"></script>
 </html>

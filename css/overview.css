@@ -1,0 +1,59 @@
+/* ------------------- Main Overview --------------- */
+.overview {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 0.6em 1.3em;
+  background: #fff;
+}
+
+.overview-grid {
+  margin-top: 10px;
+  max-width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+.overview-item {
+  border: 1px solid black;
+  padding: 15px;
+  box-shadow: 10px;
+  border-radius: 10px;
+}
+
+.overview-item-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.overview-item-image {
+  padding: 4px;
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.overview-item-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.overview-item hr {
+  margin-block: 10px;
+}
+
+.overview-item-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
