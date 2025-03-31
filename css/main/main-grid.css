@@ -1,20 +1,20 @@
 .main-grid {
   min-height: 100vh;
   display: grid;
-  gap: 15px;
+  gap: 8px;
   align-items: start;
   /* background: blue; */
-  /* grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr 1fr; */
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 40px auto auto auto auto;
 }
 
 @media screen and (min-width: 768px) {
   .main-grid {
     padding: 5px;
-    /* background: red; */
-    /* min-hei: 100vh; */
+    gap: 14px;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 50px auto auto;
+    align-items: start;
   }
 
   .main-grid * {
@@ -26,7 +26,7 @@
   .main-grid {
     /* background: black; */
     min-height: 100vh;
-    /* gap: 15px; */
+    gap: 20px;
     align-items: start;
     height: fit-content;
     grid-template-columns: 2fr 1fr;

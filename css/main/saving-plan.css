@@ -31,18 +31,6 @@
   align-items: end;
 }
 
-.saving-plan-details h1 {
-  /* font-size: 0.9rem; */
-}
-
-.saving-plan-details h1 span {
-  /* font-size: 0.6rem; */
-}
-
-.saving-plan-details p {
-  /* font-size: 0.7rem; */
-}
-
 .saving-plan-progress-bar-container {
   margin-top: 2px;
   width: 100%;

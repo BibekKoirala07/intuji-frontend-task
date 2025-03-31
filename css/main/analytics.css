@@ -24,8 +24,9 @@
 .analytics-label-two h2 {
   display: none;
 }
+
 .analytics-frequency p {
-  font-size: none;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 420px) {

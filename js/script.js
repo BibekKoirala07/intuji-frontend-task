@@ -22,25 +22,32 @@ const leftSidebarCloseButton = document.getElementById(
 );
 
 console.log(leftSidebarCloseButton);
+document.addEventListener("click", function (event) {
+  if (event.target.closest("#left-sidebar-close-button")) {
+    leftSidebar.classList.remove("left-sidebar-open");
+    overlay.classList.remove("overlay-active");
+    document.body.classList.toggle("sidebar-open");
+  }
+});
 
 leftSidebarCloseButton.addEventListener("click", () => {
   // console.log("here");
   leftSidebar.classList.remove("left-sidebar-open");
   overlay.classList.remove("overlay-active");
+  document.body.classList.toggle("sidebar-open");
 });
 
 leftDrawer.addEventListener("click", () => {
   // console.log("here", leftSidebar, overlay);
   leftSidebar.classList.toggle("left-sidebar-open");
   overlay.classList.toggle("overlay-active");
-  // console.log("here", leftSidebar, overlay);
-  // if (overlay) {
-  //   overlay.classList.toggle("overlay-active");
-  // }
+  document.body.classList.toggle("sidebar-open"); // This line is crucial
+  console.log("Body class:", document.body.classList.contains("sidebar-open"));
 });
 
 overlay.addEventListener("click", () => {
   // console.log("here");
   leftSidebar.classList.remove("left-sidebar-open");
   overlay.classList.remove("overlay-active");
+  document.body.classList.remove("sidebar-open");
 });

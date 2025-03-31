@@ -144,31 +144,61 @@
 /* ------------- Text Size ---------------- */
 
 .text-xxs {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .text-xs {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .text-sm {
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .text-md {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .text-base {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .text-lg {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .text-xl {
-  font-size: 28px;
+  font-size: 23px;
+}
+
+@media screen and (min-width: 400px) {
+  .text-xxs {
+    font-size: 12px;
+  }
+
+  .text-xs {
+    font-size: 14px;
+  }
+
+  .text-sm {
+    font-size: 16px;
+  }
+
+  .text-md {
+    font-size: 18px;
+  }
+
+  .text-base {
+    font-size: 20px;
+  }
+
+  .text-lg {
+    font-size: 24px;
+  }
+
+  .text-xl {
+    font-size: 28px;
+  }
 }
 
 /* ------------------- Utility classes ------------------ */
@@ -197,4 +227,16 @@
 
 .fit-content {
   height: fit-content;
+}
+
+/* Hidden class */
+
+.hidden-sm {
+  display: none;
+}
+
+@media screen and (min-width: 400px) {
+  .hidden-sm {
+    display: block;
+  }
 }

@@ -38,6 +38,15 @@
   visibility: visible;
 }
 
+.left-sidebar-open {
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+body.sidebar-open {
+  overflow: hidden;
+}
+
 .isActive {
   border-left: 5px solid var(--blue);
   font-weight: 700;
@@ -92,7 +101,7 @@
     background-color: white;
   } */
   .left-sidebar {
-    height: fit-content;
+    max-height: 100vh;
     border-end-end-radius: 22px;
     border-start-end-radius: 22px;
     opacity: 1;
@@ -152,7 +161,7 @@
 }
 
 .left-sidebar-links hr {
-  margin: 25px;
+  margin: 20px 25px;
 }
 
 .left-sidebar-link {
