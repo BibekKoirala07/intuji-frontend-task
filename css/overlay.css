@@ -1,0 +1,30 @@
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  z-index: 30;
+  display: none;
+  opacity: 1;
+}
+
+.overlay-active {
+  display: block;
+}
+
+@media screen and (min-width: 1080px) {
+  .overlay {
+    display: none;
+  }
+
+  .overlay-active {
+    display: none;
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
