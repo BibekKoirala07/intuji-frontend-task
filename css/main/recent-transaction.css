@@ -1,0 +1,69 @@
+/* <div class="recent-transaction-item">
+<div class="recent-transaction-image">
+    <img src="${each.img}" alt="" />
+</div>
+<div class="recent-transaction-details">
+    <h1 class="recent-transaction-details-title">${each.title}</h1>
+    <h1 class="recent-transaction-details-price">${each.price}</h1>
+    <p class="recent-transaction-details-date">${each.date}</p>
+    <p class="text-green recent-transaction-details-status">${each.status}</p>
+</div>
+</div> */
+
+.recent-transaction {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  /* overflow: hidden; */
+  /* background: pink; */
+}
+
+.recent-transaction-items {
+  flex-grow: 1; /* Allows it to expand and take remaining space */
+  min-height: 0;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recent-transaction-item {
+  /* background-color: aqua; */
+  display: grid;
+  padding: 0.5em;
+  align-items: center;
+  grid-template-columns: 60px 1fr;
+}
+
+.recent-transaction-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background: var(--background);
+  border-radius: 50%;
+}
+
+.recent-transaction-image > img {
+  width: 20px;
+  height: 20px;
+}
+
+.recent-transaction-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.recent-transaction-details-title {
+  font-size: 18px;
+}
+
+.recent-transaction-details-price {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.recent-transaction-details-status {
+  text-align: right;
+}

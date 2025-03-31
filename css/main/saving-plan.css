@@ -1,0 +1,60 @@
+.saving-plan {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.saving-plan-items {
+  height: 100%;
+  flex-basis: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.saving-plan-item {
+  padding-block: 0.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.saving-plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saving-plan-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.saving-plan-details h1 {
+  /* font-size: 0.9rem; */
+}
+
+.saving-plan-details h1 span {
+  /* font-size: 0.6rem; */
+}
+
+.saving-plan-details p {
+  /* font-size: 0.7rem; */
+}
+
+.saving-plan-progress-bar-container {
+  margin-top: 2px;
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.saving-plan-progress-bar {
+  height: 100%;
+  transition: width 4s ease-in-out;
+  border-radius: 6px;
+}

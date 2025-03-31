@@ -1,0 +1,31 @@
+.main-search {
+  width: 100%;
+  padding: 0.6em 1.3em;
+  background-color: white;
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.main-search span {
+  width: 20px;
+  height: 20px;
+}
+
+.main-search input {
+  width: 100%;
+  flex-basis: 1;
+  padding: 8px;
+  border: none;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.main-search input::placeholder {
+  font-weight: 400;
+}
+
+.main-search input:focus {
+  outline: none;
+}

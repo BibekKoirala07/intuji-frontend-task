@@ -1,0 +1,29 @@
+.utility-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  padding: 0.5em 1.5em;
+  margin: 0.7em;
+  margin-bottom: 0.2em;
+}
+
+.utility-panel input {
+}
+
+.utility-panel > div,
+.utility-panel > p {
+  display: flex;
+  align-items: center;
+}
+
+.utility-panel > div > span {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 1080px) {
+  .utility-panel {
+    display: none;
+  }
+}

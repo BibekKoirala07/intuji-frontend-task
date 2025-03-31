@@ -1,0 +1,55 @@
+.user-panel {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  padding: 5px 10px;
+}
+
+.user-panel div {
+  display: flex;
+  align-items: center;
+}
+
+.user-panel .user-panel-img {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .user-panel .user-panel-img {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .user-panel .user-panel-img {
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 100%;
+  }
+}
+
+.user-panel-img span {
+  display: flex;
+  font-size: 20px;
+  color: rgba(13, 22, 58, 1);
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.user-panel p {
+  display: flex;
+  align-items: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide the overflowing text */
+  text-overflow: ellipsis;
+}
