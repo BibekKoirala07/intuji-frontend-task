@@ -3,7 +3,6 @@
   display: grid;
   gap: 8px;
   align-items: start;
-  /* background: blue; */
   grid-template-columns: 1fr;
   grid-template-rows: 40px 40px auto auto auto auto;
 }
@@ -12,9 +11,9 @@
   .main-grid {
     padding: 5px;
     gap: 14px;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: 50px auto auto;
     align-items: start;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50px auto auto;
   }
 
   .main-grid * {

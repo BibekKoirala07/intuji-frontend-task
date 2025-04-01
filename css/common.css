@@ -207,9 +207,16 @@
 
 /* ------------------------ Image ------------------------- */
 
+@media screen and (min-width: 768px) {
+  .img-sm {
+  }
+}
+
 .img-sm-parent {
+  display: flex;
+  justify-content: center;
   width: 40px;
-  height: 40px;
+  height: 100%;
 }
 
 .img-sm {

@@ -19,16 +19,15 @@
 }
 
 .recent-transaction-items {
-  flex-grow: 1; /* Allows it to expand and take remaining space */
+  flex-grow: 1;
   min-height: 0;
-  /* height: 100%; */
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .recent-transaction-item {
-  /* background-color: aqua; */
   display: grid;
   padding: 0.5em;
   align-items: center;
