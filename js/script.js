@@ -13,9 +13,8 @@ let rightDrawerBoolean = false;
 // renderLaptopLeftSidebar();
 
 const leftSidebar = document.getElementById("left-sidebar");
-const rightSidebar = document.getElementById("right-sidebar");
 const leftDrawer = document.getElementById("left-drawer");
-const rightDrawer = document.getElementById("right-drawer");
+
 const overlay = document.getElementById("overlay");
 const leftSidebarCloseButton = document.getElementById(
   "left-sidebar-close-button"
@@ -41,8 +40,7 @@ leftDrawer.addEventListener("click", () => {
   // console.log("here", leftSidebar, overlay);
   leftSidebar.classList.toggle("left-sidebar-open");
   overlay.classList.toggle("overlay-active");
-  document.body.classList.toggle("sidebar-open"); // This line is crucial
-  console.log("Body class:", document.body.classList.contains("sidebar-open"));
+  document.body.classList.toggle("sidebar-open");
 });
 
 overlay.addEventListener("click", () => {

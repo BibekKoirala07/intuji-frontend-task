@@ -8,7 +8,13 @@
 .analytics-header-right {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
+}
+
+@media screen and (min-width: 420px) {
+  .analytics-frequency {
+    padding: 12px;
+  }
 }
 
 .analytics-label-one,
@@ -25,8 +31,12 @@
   display: none;
 }
 
+.analytics-frequency {
+  padding: 4px 6px;
+}
+
 .analytics-frequency p {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 @media screen and (min-width: 420px) {
@@ -42,11 +52,12 @@
   }
 
   .analytics-header-right p {
+    font-size: 12px;
   }
-}
 
-.analytics-frequency {
-  padding: 5px 15px;
+  .analytics-frequency {
+    padding: 5px 15px;
+  }
 }
 
 .analytics-chart {
