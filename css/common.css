@@ -162,7 +162,8 @@
 .text-base {
   font-size: 18px;
 }
-8 .text-lg {
+
+.text-lg {
   font-size: 19px;
 }
 
@@ -173,6 +174,7 @@
 @media screen and (min-width: 400px) {
   .text-xxs {
     font-size: 10px;
+    /* background: red; */
   }
 
   .text-xs {
@@ -200,7 +202,38 @@
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
+  .text-xxs {
+    font-size: 12px;
+    /* background: lime; */
+  }
+
+  .text-xs {
+    font-size: 14px;
+  }
+
+  .text-sm {
+    font-size: 16px;
+  }
+
+  .text-md {
+    font-size: 18px;
+  }
+
+  .text-base {
+    font-size: 20px;
+  }
+
+  .text-lg {
+    font-size: 24px;
+  }
+
+  .text-xl {
+    font-size: 28px;
+  }
+}
+
+/* @media screen and (min-width: 1080px) {
   .text-xxs {
     font-size: 12px;
   }
@@ -227,6 +260,35 @@
 
   .text-xl {
     font-size: 28px;
+  }
+} */
+@media screen and (min-width: 1080px) {
+  .text-xxs {
+    font-size: 11px;
+  }
+
+  .text-xs {
+    font-size: 13px;
+  }
+
+  .text-sm {
+    font-size: 14px;
+  }
+
+  .text-md {
+    font-size: 16px;
+  }
+
+  .text-base {
+    font-size: 18px;
+  }
+
+  .text-lg {
+    font-size: 21px;
+  }
+
+  .text-xl {
+    font-size: 25px;
   }
 }
 
