@@ -1,4 +1,5 @@
 .left-sidebar {
+  padding-top: 23rem;
   position: fixed;
   left: -80%;
   top: 0;
@@ -10,6 +11,8 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease;
+  /* overflow-y: auto;
+  max-height: 100vh; */
 }
 
 .left-sidebar-open {
