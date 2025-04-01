@@ -144,27 +144,26 @@
 /* ------------- Text Size ---------------- */
 
 .text-xxs {
-  font-size: 10px;
-}
-
-.text-xs {
   font-size: 12px;
 }
 
-.text-sm {
+.text-xs {
   font-size: 13px;
 }
 
+.text-sm {
+  font-size: 14px;
+}
+
 .text-md {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .text-base {
-  font-size: 17px;
+  font-size: 18px;
 }
-
-.text-lg {
-  font-size: 20px;
+8 .text-lg {
+  font-size: 19px;
 }
 
 .text-xl {
@@ -172,6 +171,36 @@
 }
 
 @media screen and (min-width: 400px) {
+  .text-xxs {
+    font-size: 10px;
+  }
+
+  .text-xs {
+    font-size: 12px;
+  }
+
+  .text-sm {
+    font-size: 13px;
+  }
+
+  .text-md {
+    font-size: 15px;
+  }
+
+  .text-base {
+    font-size: 17px;
+  }
+
+  .text-lg {
+    font-size: 20px;
+  }
+
+  .text-xl {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 800px) {
   .text-xxs {
     font-size: 12px;
   }
