@@ -329,6 +329,10 @@
 
 /* Hidden class */
 
+.display-none {
+  display: none;
+}
+
 .hidden-sm {
   display: none;
 }
