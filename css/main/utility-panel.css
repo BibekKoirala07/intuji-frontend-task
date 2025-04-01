@@ -9,7 +9,8 @@
   margin: 8px 10px 0px 10px;
 }
 
-.utility-panel input {
+.right-drawer {
+  display: none;
 }
 
 .utility-panel > div,

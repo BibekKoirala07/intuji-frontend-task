@@ -80,15 +80,17 @@ body.sidebar-open {
   } */
 
   .left-sidebar {
+    padding-bottom: 10px;
     max-height: 100vh;
     opacity: 1;
     visibility: visible;
     width: 100%;
     position: static;
     display: block;
-    background-color: white;
     transform: none;
     box-shadow: none;
+    display: flex;
+    flex-direction: column;
   }
 
   .left-sidebar-close {
@@ -118,23 +120,30 @@ body.sidebar-open {
   padding: 10px;
 }
 
-.sidebar-links {
+/* .sidebar-links {
   cursor: pointer;
   margin-top: 10px;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
 .left-sidebar-links {
   display: flex;
   flex-direction: column;
+  justify-content: end;
 
-  gap: 60px;
+  flex-grow: 1;
+  height: 100%;
 }
 
 .left-sidebar-links-upper-part {
+}
+
+.left-sidebar-links-lower-part {
+  margin-top: auto;
+  /* background: blue; */
 }
 
 .left-sidebar-links hr {

@@ -2,9 +2,9 @@ const savingPlans = [
   {
     title: "Amazon Purchase",
     target: "August 22, 2022",
-    firstNumber: Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000, // 5-6 digit number
-    secondNumber: Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000, // 3-4 digit number
-    progressPercentage: Math.floor(Math.random() * 100), // Random percentage
+    firstNumber: Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000,
+    secondNumber: Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000,
+    progressPercentage: Math.floor(Math.random() * 100),
   },
   {
     title: "Netflix Subscription",
