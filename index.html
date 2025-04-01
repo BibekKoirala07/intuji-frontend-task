@@ -7,12 +7,11 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main/utility-panel.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css//left-sidebar/left-sidebar.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/main/main-grid.css" />
     <link rel="stylesheet" href="./css/overlay.css" />
     <link rel="stylesheet" href="./css/main/recent-transaction.css" />
-    <link rel="stylesheet" href="./css/main//saving-plan.css" />
+    <link rel="stylesheet" href="./css/main/saving-plan.css" />
     <link rel="stylesheet" href="./css/main/overview.css" />
     <link rel="stylesheet" href="./css/main/form.css" />
     <link rel="stylesheet" href="./css/main/user-panel.css" />
@@ -37,20 +36,19 @@
       <div class="left-drawer cursor-pointer" id="left-drawer">
         <span class="material-symbols-outlined"> menu </span>
       </div>
-      <div
-        class="right-drawer cursor-pointer"
-        id="right-drawer"
-        style="display: none"
-      >
+      <div class="right-drawer cursor-pointer display-none" id="right-drawer">
         <span class="material-symbols-outlined"> menu </span>
       </div>
     </div>
     <div class="container" id="container">
+      <!-- ------------------- Left Sidebar --------------- -->
       <div class="left-sidebar bg-white" id="left-sidebar"></div>
-      <!-- <div class="laptop-left-sidebar bg-white" id="laptop-left-sidebar"></div> -->
+
+      <!-- --------------------- Overlay ------------------ -->
       <div class="overlay" id="overlay"></div>
 
       <main class="main">
+        <!-- ---------------  This are four section -------------- -->
         <div class="main-grid">
           <form class="main-search radius-xxlg">
             <span class="material-symbols-outlined"> search </span>
@@ -61,6 +59,7 @@
               class="font-medium light-border"
             />
           </form>
+
           <div class="bg-white user-panel radius-xxlg">
             <div class="light-border user-panel-img radius-xxlg padding-img">
               <span class="material-symbols-outlined img-sm">
@@ -84,6 +83,7 @@
               </span>
             </div>
           </div>
+
           <div class="overview padding-sm bg-white radius-lg">
             <div class="main-component-common-header">
               <h2 class="text-primary text-base">Overview</h2>
@@ -91,6 +91,7 @@
             </div>
             <div class="overview-items" id="overview-items"></div>
           </div>
+
           <div class="saving-plan bg-white padding-sm bg-white radius-lg">
             <div class="main-component-common-header">
               <h2 class="text-primary text-base">Saving Plans</h2>

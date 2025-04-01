@@ -1,28 +1,28 @@
 const recentTransaction = [
   {
     img: "/assets/empty-wallet.png",
-    title: "Recent",
+    title: "Figma",
     date: "August 20, 2022",
     price: 200,
     status: "Completed",
   },
   {
     img: "/assets/empty-wallet.png",
-    title: "Recent",
+    title: "youtube",
     date: "August 20, 2022",
     price: 200,
     status: "Completed",
   },
   {
     img: "/assets/empty-wallet.png",
-    title: "Recent",
+    title: "Spotify",
     date: "August 20, 2022",
     price: 200,
     status: "Completed",
   },
   {
     img: "/assets/empty-wallet.png",
-    title: "Recent",
+    title: "Freepik",
     date: "August 20, 2022",
     price: 200,
     status: "Completed",
