@@ -15,6 +15,12 @@
   .analytics-frequency {
     padding: 12px;
   }
+
+  .analytics-header-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
 }
 
 .analytics-label-one,

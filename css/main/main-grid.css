@@ -24,7 +24,7 @@
 @media screen and (min-width: 1080px) {
   .main-grid {
     height: 100vh;
-    gap: 20px;
+    gap: 10px;
     align-items: start;
     height: fit-content;
     grid-template-columns: 2fr 1fr;

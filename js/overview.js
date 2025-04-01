@@ -5,7 +5,7 @@ const overviewData = [
     subImage: "/assets/gree-export.png",
     heading: "Your Balance",
     description: "This is product 1",
-    price: 10000,
+    price: 28891.138,
     quantity: 1,
   },
   {
@@ -14,7 +14,7 @@ const overviewData = [
     subImage: "/assets/pink-export.png",
     heading: "Saving",
     description: "This is product 2",
-    price: 20000,
+    price: 1050.44,
     quantity: 1,
   },
   {
@@ -23,7 +23,7 @@ const overviewData = [
     subImage: "/assets/orange-export.png",
     heading: "Expenses",
     description: "This is product 3",
-    price: 15000,
+    price: 200.31,
     quantity: 1,
   },
   {
@@ -32,7 +32,7 @@ const overviewData = [
     subImage: "/assets/blue-export.png",
     heading: "Incomes",
     description: "This is product 4",
-    price: 25000,
+    price: 21121.0,
     quantity: 1,
   },
 ];
@@ -67,7 +67,12 @@ function renderOverViewData() {
               <div class="overview-item-footer">
                 <h1 class="overview-item-footer-price font-semibold text-lg">$${each.price.toLocaleString()}</h1>
                 <section class="overview-item-footer-link">
-                  <span class="material-symbols-outlined"> arrow_forward </span>
+      ${
+        index == 0
+          ? `<img src="../assets/arrow-right - Copy.png" alt="" />`
+          : `<img src="../assets/arrow-right.png" alt="" />`
+      }
+                  
                 </section>
               </div>
             </div>
@@ -75,6 +80,9 @@ function renderOverViewData() {
       })
       .join("")}
     `;
+}
+{
+  /* <span class="material-symbols-outlined"> arrow_forward </span>; */
 }
 
 export default renderOverViewData;
